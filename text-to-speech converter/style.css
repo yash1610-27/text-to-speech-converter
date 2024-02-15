@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #3498db, #8e44ad);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #e74c3c;
+    text-decoration: underline; /* Add underline to the span */
+}
+
+textarea {
+    width: 80%;
+    max-width: 600px;
+    height: 150px;
+    background: linear-gradient(to right, #3498db, #8e44ad);
+    color: #ecf0f1;
+    font-size: 16px;
+    border: 0;
+    padding: 15px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 20px;
+    /* Scrollbar Customization */
+    scrollbar-width: thin;
+    scrollbar-color: #2c3e50 #ecf0f1;
+}
+
+textarea::placeholder {
+    font-size: 16px;
+    color: #bdc3c7;
+}
+
+.row {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    background: #e74c3c;
+    color: #ecf0f1;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease; /* Add transition for smooth effect */
+}
+
+button:hover {
+    background: #c0392b; /* Change color on hover */
+}
+
+button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+select {
+    flex: 1;
+    color: #2c3e50;
+    background: #ecf0f1;
+    height: 40px;
+    padding: 0 15px;
+    outline: 0;
+    border: 0;
+    border-radius: 25px;
+    appearance: none;
+    background-image: url(dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 15px);
+    background-position-y: center;
+}
+
+/* Additional Styling */
+@media only screen and (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    textarea,
+    .row {
+        width: 90%;
+    }
+}
+
+/* Scrollbar Customization for WebKit Browsers */
+/* Handle on hover */
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #34495e;
+}
+
+/* Handle */
+textarea::-webkit-scrollbar-thumb {
+    background: #2c3e50;
+    border-radius: 10px;
+}
+
+/* Handle on active/dragging */
+textarea::-webkit-scrollbar-thumb:active {
+    background: #2980b9;
+}
+
+/* Track */
+textarea::-webkit-scrollbar-track {
+    background: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
